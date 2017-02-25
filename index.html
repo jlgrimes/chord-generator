@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chords</title>
+    <link rel="stylesheet" type="text/css" href="buttons/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="buttons/css/component.css" />
+    <script src="buttons/js/modernizr.custom.js"></script>
+    <script src="source.js"></script>
+    <script src="Tone.js"></script>
+</head>
+<body>
+<div class="container">
+    <section class="color-1">
+        <h1>Diatonic Chords<span>All played in the key of C Major.</span></h1>
+        <p>
+            <button onclick = "I()" class="btn btn-1 btn-1e">I</button>
+            <button onclick = "ii()" class="btn btn-1 btn-1e">ii</button>
+            <button onclick="iii()" class="btn btn-1 btn-1e">iii</button>
+            <button onclick = "IV()" class="btn btn-1 btn-1e">IV</button>
+        </p>
+        <p>
+            <button onclick = "V()" class="btn btn-1 btn-1e">V</button>
+            <button onclick="vi()" class="btn btn-1 btn-1e">vi</button>
+            <button onclick="vii()" class="btn btn-1 btn-1e">vii</button>
+        </p>
+    </section>
+
+    <section class="color-2">
+        <h1>Secondary Dominants<span>Sample chord progressions including shown chords.</span></h1>
+        <p>
+            <button onclick = "V_ii()" class="btn btn-1 btn-1d">V/ii</button>
+            <button onclick = "V_iii()" class="btn btn-1 btn-1d">V/iii</button>
+            <button onclick="V_IV()" class="btn btn-1 btn-1d">V/IV</button>
+        </p>
+        <p>
+            <button onclick="V_V()" class="btn btn-1 btn-1d">V/V</button>
+            <button onclick="V_vi()" class="btn btn-1 btn-1d">V/vi</button>
+            <button onclick="V_vii()" class="btn btn-1 btn-1d">V/vii</button>
+        </p>
+    </section>
+
+    <section class="color-4">
+        <h1>Cadences<span>Sample harmonies using the given cadence.</span></h1>
+        <p>
+            <button onclick = "PAC()" class="btn btn-1 btn-1b">Perfect Authentic</button>
+            <button onclick = "IAC()" class="btn btn-1 btn-1b">Imperfect Authentic</button>
+            <button onclick="HC()" class="btn btn-1 btn-1b">Half Cadence</button>
+        </p>
+        <p>
+            <button onclick="PHR()" class="btn btn-1 btn-1b">Phrygian</button>
+            <button onclick="PLG()" class="btn btn-1 btn-1b">Plagal</button>
+            <button onclick="PIC()" class="btn btn-1 btn-1b">Picardy Third</button>
+        </p>
+    </section>
+
+    </section>
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script>
+    var buttons7Click = Array.prototype.slice.call( document.querySelectorAll( '#btn-click button' ) ),
+            buttons9Click = Array.prototype.slice.call( document.querySelectorAll( 'button.btn-8g' ) ),
+            totalButtons7Click = buttons7Click.length,
+            totalButtons9Click = buttons9Click.length;
+
+    buttons7Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+    buttons9Click.forEach( function( el, i ) { el.addEventListener( 'click', activate, false ); } );
+
+    function activate() {
+        var self = this, activatedClass = 'btn-activated';
+
+        if( classie.has( this, 'btn-7h' ) ) {
+            // if it is the first of the two btn-7h then activatedClass = 'btn-error';
+            // if it is the second then activatedClass = 'btn-success'
+            activatedClass = buttons7Click.indexOf( this ) === totalButtons7Click-2 ? 'btn-error' : 'btn-success';
+        }
+        else if( classie.has( this, 'btn-8g' ) ) {
+            // if it is the first of the two btn-8g then activatedClass = 'btn-success3d';
+            // if it is the second then activatedClass = 'btn-error3d'
+            activatedClass = buttons9Click.indexOf( this ) === totalButtons9Click-2 ? 'btn-success3d' : 'btn-error3d';
+        }
+
+        if( !classie.has( this, activatedClass ) ) {
+            classie.add( this, activatedClass );
+            setTimeout( function() { classie.remove( self, activatedClass ) }, 1000 );
+        }
+    }
+
+    document.querySelector( '.btn-7i' ).addEventListener( 'click', function() {
+        classie.add( document.querySelector( '#trash-effect' ), 'trash-effect-active' );
+    }, false );
+</script>
+</body>
+</html>
