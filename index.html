@@ -14,6 +14,29 @@
 <body>
 <div class="container">
     <section class="color-1">
+        <h1>Chords<span>Plain ol' chords.</span></h1>
+        <p>
+            <button onclick = "major()" class="btn btn-1 btn-1f">Major</button>
+            <button onclick = "minor()" class="btn btn-1 btn-1f">Minor</button>
+            <button onclick= "diminished()" class="btn btn-1 btn-1f">Diminished</button>
+            <button onclick = "augmented()" class="btn btn-1 btn-1f">Augmented</button>
+        </p>
+        <p>
+            <button onclick = "major7th()" class="btn btn-1 btn-1f">Major 7th</button>
+            <button onclick="minor7th()" class="btn btn-1 btn-1f">Minor 7th</button>
+            <button onclick="diminished7th()" class="btn btn-1 btn-1f">Diminished 7th</button>
+            <button onclick="halfdiminished7th()" class="btn btn-1 btn-1f">Half Diminished 7th</button>
+        </p>
+
+        <p>
+            <button onclick = "dominant7th()" class="btn btn-1 btn-1f">Dominant 7th</button>
+            <button onclick="augmentedmajor7th()" class="btn btn-1 btn-1f">Augmented Major 7th</button>
+            <button onclick="augmentedminor7th()" class="btn btn-1 btn-1f">Augmented Minor 7th</button>
+            <button onclick="minormajor7th()" class="btn btn-1 btn-1f">Minor Major 7th</button>
+        </p>
+    </section>
+
+    <section class="color-2">
         <h1>Diatonic Chords<span>All played in the key of C Major.</span></h1>
         <p>
             <button onclick = "I()" class="btn btn-1 btn-1e">I</button>
@@ -28,7 +51,29 @@
         </p>
     </section>
 
-    <section class="color-2">
+    <section class="color-4">
+        <h1>Intervals<span>Both minor and major.</span></h1>
+        <p>
+            <button onclick = "minor2()" class="btn btn-1 btn-1c">Minor 2nd</button>
+            <button onclick = "major2()" class="btn btn-1 btn-1c">Major 2nd</button>
+            <button onclick="minor3()" class="btn btn-1 btn-1c">Minor 3rd</button>
+            <button onclick = "major3()" class="btn btn-1 btn-1c">Major 3rd</button>
+        </p>
+        <p>
+            <button onclick = "perfect4()" class="btn btn-1 btn-1c">Perfect 4th</button>
+            <button onclick = "tritone()" class="btn btn-1 btn-1c">Tritone</button>
+            <button onclick = "perfect5()" class="btn btn-1 btn-1c">Perfect 5th</button>
+            <button onclick = "minor6()" class="btn btn-1 btn-1c">Minor 6th</button>
+        </p>
+        <p>
+            <button onclick="major6()" class="btn btn-1 btn-1c">Major 6th</button>
+            <button onclick = "minor7()" class="btn btn-1 btn-1c">Minor 7th</button>
+            <button onclick = "major7()" class="btn btn-1 btn-1c">Major 7th</button>
+            <button onclick = "octave()" class="btn btn-1 btn-1c">Octave</button>
+        </p>
+    </section>
+
+    <section class="color-5">
         <h1>Secondary Dominants<span>Sample chord progressions including shown chords.</span></h1>
         <p>
             <button onclick = "V_ii()" class="btn btn-1 btn-1d">V/ii</button>
@@ -41,7 +86,7 @@
             <button onclick="V_vii()" class="btn btn-1 btn-1d">V/vii</button>
         </p>
     </section>
-    <section class="color-4">
+    <section class="color-6">
         <h1>Cadences<span>Sample harmonies using the given cadence.</span></h1>
         <p>
             <button onclick = "PAC()" class="btn btn-1 btn-1b">Perfect Authentic</button>

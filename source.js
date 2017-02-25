@@ -1,3 +1,75 @@
+function major()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "E4", "G4", "C5"], "2n")
+}
+
+function minor()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "Eb4", "G4", "C5"], "2n")
+}
+
+function diminished()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "Eb4", "Gb4", "C5"], "2n")
+}
+
+function augmented()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "E4", "G#4", "C5"], "2n")
+}
+
+function major7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "E4", "G4", "B4"], "2n")
+}
+
+function minor7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "Eb4", "G4", "Bb4"], "2n")
+}
+
+function diminished7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "Eb4", "Gb4", "A4"], "2n")
+}
+
+function halfdiminished7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "Eb4", "Gb4", "Bb4"], "2n")
+}
+
+function dominant7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "E4", "G4", "Bb4"], "2n")
+}
+
+function augmentedmajor7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "E4", "G#4", "B4"], "2n")
+}
+
+function augmentedminor7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "E4", "G#4", "Bb4"], "2n")
+}
+
+function minormajor7th()
+{
+    var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
+    polySynth.triggerAttackRelease(["C3", "C4", "Eb4", "G4", "B4"], "2n")
+}
+
 function I(){
     var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
     polySynth.triggerAttackRelease(["C3", "C4", "E4", "G4", "C5"], "2n")
@@ -31,6 +103,102 @@ function vi(){
 function vii(){
     var polySynth = new Tone.PolySynth(5, Tone.Synth).toMaster();
     polySynth.triggerAttackRelease(["B3", "B4", "D4", "F4", "B5"], "2n")
+}
+
+function minor2(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["C#4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function major2(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["D4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function minor3(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["D#4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function major3(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["E4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function perfect4(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["F4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function tritone(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["F#4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function perfect5(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["G4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function minor6(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["G#4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function major6(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["A4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function minor7(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["A#4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function major7(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["B4"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
+}
+
+function octave(){
+    var polySynth = new Tone.PolySynth(1, Tone.Synth).toMaster();
+
+    polySynth.triggerAttackRelease(["C4"], "2n");
+    polySynth.triggerAttackRelease(["C5"], "2n", "+2n");
+    polySynth.triggerAttackRelease(["C4"], "2n", "+1m");
 }
 
 function V_ii() {
