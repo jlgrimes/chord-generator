@@ -13,8 +13,23 @@
 </head>
 <body>
 <div class="container">
-    <section class="color-1">
-        <h1>Chords<span>Plain ol' chords.</span></h1>
+    <section class="color-2">
+        <h1>Chords<span>You can choose a key to play chords in, default is C.</span></h1>
+        <p>
+            <button onclick = "key = 'C'" class="btn btn-2 btn-2i">C</button>
+            <button onclick = "key = 'C#'" class="btn btn-2 btn-2i">C#</button>
+            <button onclick= "key = 'D'" class="btn btn-2 btn-2i">D</button>
+            <button onclick = "key = 'D#'" class="btn btn-2 btn-2i">D#</button>
+            <button onclick = "key = 'E'" class="btn btn-2 btn-2i">E</button>
+            <button onclick = "key = 'F'" class="btn btn-2 btn-2i">F</button>
+            <button onclick= "key = 'F#'" class="btn btn-2 btn-2i">F#</button>
+            <button onclick = "key = 'G'" class="btn btn-2 btn-2i">G</button>
+            <button onclick = "key = 'G#'" class="btn btn-2 btn-2i">G#</button>
+            <button onclick= "key = 'A'" class="btn btn-2 btn-2i">A</button>
+            <button onclick = "key = 'A#'" class="btn btn-2 btn-2i">A#</button>
+            <button onclick = "key = 'B'" class="btn btn-2 btn-2i">B</button>
+        </p>
+
         <p>
             <button onclick = "major()" class="btn btn-1 btn-1f">Major</button>
             <button onclick = "minor()" class="btn btn-1 btn-1f">Minor</button>
@@ -36,7 +51,7 @@
         </p>
     </section>
 
-    <section class="color-2">
+    <section class="color-1">
         <h1>Diatonic Chords<span>All played in the key of C Major.</span></h1>
         <p>
             <button onclick = "I()" class="btn btn-1 btn-1e">I</button>
@@ -98,6 +113,10 @@
             <button onclick="PLG()" class="btn btn-1 btn-1b">Plagal</button>
             <button onclick="PIC()" class="btn btn-1 btn-1b">Picardy Third</button>
         </p>
+    </section>
+
+    <section class="color-7">
+        <h1>Made by Jared Grimes<span>Credits go out to Tone.js for libraries, and codrops for the sick looking buttons.</span></h1>
     </section>
 
     </section>
