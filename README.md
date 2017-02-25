@@ -1,0 +1,2 @@
+# chord-generator
+Generates chords
